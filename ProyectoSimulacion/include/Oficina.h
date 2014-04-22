@@ -26,7 +26,7 @@ class Oficina
 
         float poisson();
         float generarEntrada();
-        void proximoEvento(int cola);
+        void proximoEvento(int cola, Cliente *c);
         void calcularEstadisticas();
         void simulacion();
 

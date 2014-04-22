@@ -34,14 +34,23 @@ float Oficina::generarEntrada() {
     int cola = rand() % datos->numeroColas + 1;
     Evento *e = new Evento(c, cola);
     eventos->agregar(e);
-    proximoEvento(cola);
+    proximoEvento(cola, c);
     return entrada;
 }
 
-void Oficina::proximoEvento(int cola) {
-    for (int j = 0; j < datos->numeroColas; j ++) {
-        j += j + 1;
+void Oficina::proximoEvento(int cola, Cliente *c) {
+    float *valores = datos->transiciones[cola];
+    int largo = datos->numeroColas + 1;
+    int posicion = 9;
+    float mayor = 0.0;
+    for (int i = 0; i < largo; i ++) {
+        if (valores[i] > mayor) {
+            mayor = valores[i];
+            posicion = i;
+        }
     }
+    Evento *e = new Evento(c, posicion);
+    eventos->agregar(e);
 }
 
 void Oficina::calcularEstadisticas() {
