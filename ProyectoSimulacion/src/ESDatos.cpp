@@ -7,7 +7,12 @@ ESDatos::ESDatos(std::string nombre)
 
 ESDatos::~ESDatos()
 {
-    //dtor
+    delete[] atenciones;
+
+    for (int i = 0; i < numeroColas; i ++) {
+        delete[] transiciones[i];
+    }
+    delete [] transiciones;
 }
 
 void ESDatos::cargarDatos(std::string nombre) {

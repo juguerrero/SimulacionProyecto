@@ -4,12 +4,16 @@ Cliente::Cliente(int id, float entrada)
 {
     this->id = id;
     this->entrada = entrada;
-    this->salida = -1;
+    this->salida = 0;
 }
 
 Cliente::~Cliente()
 {
     //dtor
+}
+
+void Cliente::sumarTiempo(float tiempo) {
+    salida += tiempo;
 }
 
 int Cliente::getId() {

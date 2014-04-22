@@ -30,3 +30,10 @@ Cliente *ColaOficina::eliminar() {
     }
     return NULL;
 }
+
+float ColaOficina::frente() {
+    if (!vacio()) {
+        return contenedor[size - 1]->getEntrada();
+    }
+    return -1;
+}

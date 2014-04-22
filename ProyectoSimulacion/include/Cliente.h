@@ -13,6 +13,8 @@ class Cliente
         Cliente(int id, float entrada);
         virtual ~Cliente();
 
+        void sumarTiempo(float tiempo);
+
         int getId();
         void setId(int id);
         float getEntrada();

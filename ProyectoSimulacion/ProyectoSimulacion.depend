@@ -55,3 +55,56 @@
 	<math.h>
 	<time.h>
 
+1398149252 source:c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\main.cpp
+	<iostream>
+	<Oficina.h>
+
+1398154323 c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\include\oficina.h
+	<ESDatos.h>
+	<ColaOficina.h>
+	<ColaEvento.h>
+	<string>
+	<iostream>
+	<math.h>
+	<time.h>
+
+1398154398 c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\include\esdatos.h
+	<string>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+
+1398153373 c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\include\colaoficina.h
+	<Cola.h>
+	<Cliente.h>
+
+1398153373 c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\include\cola.h
+	<stdlib.h>
+
+1398153373 c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\include\cliente.h
+
+1398153373 c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\include\colaevento.h
+	<Cola.h>
+	<Evento.h>
+
+1398154004 c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\include\evento.h
+	<Cliente.h>
+
+1398106920 source:c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\src\cola.cpp
+	"Cola.h"
+
+1398153991 source:c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\src\evento.cpp
+	"Evento.h"
+
+1398153373 source:c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\src\cliente.cpp
+	"Cliente.h"
+
+1398153373 source:c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\src\colaevento.cpp
+	"ColaEvento.h"
+
+1398153373 source:c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\src\colaoficina.cpp
+	"ColaOficina.h"
+
+1398153825 source:c:\users\felipe\documents\github\simulacionproyecto\proyectosimulacion\src\esdatos.cpp
+	"ESDatos.h"
+

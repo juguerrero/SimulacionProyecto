@@ -58,3 +58,10 @@ Evento *ColaEvento::eliminar() {
     }
     return NULL;
 }
+
+float ColaEvento::frente() {
+    if (!vacio()) {
+        return contenedor[0]->getC()->getEntrada();
+    }
+    return -1;
+}

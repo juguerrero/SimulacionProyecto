@@ -10,13 +10,13 @@ class Evento
         int transicion;
 
     public:
-        Evento(Cliente *c, float transicion);
+        Evento(Cliente *c, int transicion);
         virtual ~Evento();
 
         Cliente *getC();
         void setC(Cliente *c);
-        float getTransicion();
-        void setTransicion(float transicion);
+        int getTransicion();
+        void setTransicion(int transicion);
 };
 
 #endif // EVENTO_H

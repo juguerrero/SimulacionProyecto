@@ -13,6 +13,7 @@ class ColaEvento : public Cola<Evento>
         bool esta(int id);
         void agregar(Evento *e);
         Evento *eliminar();
+        float frente();
 };
 
 #endif // COLAEVENTO_H

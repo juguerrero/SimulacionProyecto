@@ -1,6 +1,6 @@
 #include "Evento.h"
 
-Evento::Evento(Cliente *c, float transicion)
+Evento::Evento(Cliente *c, int transicion)
 {
     this->c = c;
     this->transicion = transicion;
@@ -19,10 +19,10 @@ void Evento::setC(Cliente *c) {
     this->c = c;
 }
 
-float Evento::getTransicion() {
+int Evento::getTransicion() {
     return transicion;
 }
 
-void Evento::setTransicion(float transicion) {
+void Evento::setTransicion(int transicion) {
     this->transicion = transicion;
 }

@@ -18,12 +18,14 @@ class Oficina
         int numeroClientes;
         float transcurso;
 
+        void iniciarColas();
+
     public:
         Oficina();
         virtual ~Oficina();
 
         float poisson();
-        void generarEntrada();
+        float generarEntrada();
         void proximoEvento(int cola);
         void calcularEstadisticas();
         void simulacion();

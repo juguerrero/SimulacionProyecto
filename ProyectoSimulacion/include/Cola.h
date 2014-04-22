@@ -27,6 +27,7 @@ class Cola
         virtual bool esta(int id) =0;
         virtual void agregar(E *c) =0;
         virtual E *eliminar() =0;
+        virtual float frente() =0;
 };
 
 #endif // COLA_H

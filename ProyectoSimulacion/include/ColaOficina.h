@@ -12,6 +12,7 @@ class ColaOficina : public Cola<Cliente>
         bool esta(int id);
         void agregar(Cliente *c);
         Cliente *eliminar();
+        float frente();
 };
 
 #endif // COLAOFICINA_H
