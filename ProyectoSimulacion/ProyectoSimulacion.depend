@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1398149252 source:c:\users\felipe\documents\c\proyectosimulacion\main.cpp
+	<iostream>
+	<Oficina.h>
+
+1398045424 source:c:\users\felipe\documents\c\proyectosimulacion\src\cliente.cpp
+	"Cliente.h"
+
+1398045424 c:\users\felipe\documents\c\proyectosimulacion\include\cliente.h
+
+1398106920 source:c:\users\felipe\documents\c\proyectosimulacion\src\cola.cpp
+	"Cola.h"
+
+1398148149 c:\users\felipe\documents\c\proyectosimulacion\include\cola.h
+	<stdlib.h>
+
+1398107652 source:c:\users\felipe\documents\c\proyectosimulacion\src\colaoficina.cpp
+	"ColaOficina.h"
+
+1398107060 c:\users\felipe\documents\c\proyectosimulacion\include\colaoficina.h
+	<Cola.h>
+	<Cliente.h>
+
+1398107665 source:c:\users\felipe\documents\c\proyectosimulacion\src\colaevento.cpp
+	"ColaEvento.h"
+
+1398107244 c:\users\felipe\documents\c\proyectosimulacion\include\colaevento.h
+	<Cola.h>
+	<Evento.h>
+
+1398060657 c:\users\felipe\documents\c\proyectosimulacion\include\evento.h
+	<Cliente.h>
+
+1398060960 source:c:\users\felipe\documents\c\proyectosimulacion\src\evento.cpp
+	"Evento.h"
+
+1398151134 source:c:\users\felipe\documents\c\proyectosimulacion\src\esdatos.cpp
+	"ESDatos.h"
+
+1398148587 c:\users\felipe\documents\c\proyectosimulacion\include\esdatos.h
+	<string>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+
+1398149219 source:c:\users\felipe\documents\c\proyectosimulacion\src\oficina.cpp
+	"Oficina.h"
+
+1398149219 c:\users\felipe\documents\c\proyectosimulacion\include\oficina.h
+	<ESDatos.h>
+	<ColaOficina.h>
+	<ColaEvento.h>
+	<string>
+	<iostream>
+	<math.h>
+	<time.h>
+
