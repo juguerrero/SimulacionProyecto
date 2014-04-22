@@ -13,7 +13,7 @@ class Oficina
 {
     private:
         ESDatos *datos;
-        ColaOficina *colas;
+        ColaOficina **colas;
         ColaEvento *eventos;
         int numeroClientes;
         float transcurso;

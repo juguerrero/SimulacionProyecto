@@ -3,7 +3,7 @@
 Oficina::Oficina()
 {
     datos = new ESDatos("simulacion.txt");
-    colas = new ColaOficina[datos->numeroColas];
+    colas = new ColaOficina *[datos->numeroColas];
     eventos = new ColaEvento();
     numeroClientes = 0;
     transcurso = 0.0;
