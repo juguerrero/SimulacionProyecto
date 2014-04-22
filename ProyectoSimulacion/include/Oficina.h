@@ -25,7 +25,7 @@ class Oficina
         virtual ~Oficina();
 
         float poisson();
-        float generarEntrada();
+        float generarEntrada(float tiempoEntrada);
         void proximoEvento(int cola, Cliente *c);
         void calcularEstadisticas();
         void simulacion();

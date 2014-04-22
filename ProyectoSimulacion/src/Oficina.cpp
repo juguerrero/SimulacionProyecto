@@ -26,16 +26,15 @@ float Oficina::poisson() {
     return - log((double)rand() / RAND_MAX) / datos->tasaEntrada;
 }
 
-float Oficina::generarEntrada() {
-    float entrada = poisson();
-    transcurso += entrada;
+float Oficina::generarEntrada(float tiempoEntrada) {
+    transcurso += tiempoEntrada;
     numeroClientes ++;
-    Cliente *c = new Cliente(numeroClientes, entrada);
+    Cliente *c = new Cliente(numeroClientes, transcurso);
     int cola = rand() % datos->numeroColas + 1;
     Evento *e = new Evento(c, cola);
     eventos->agregar(e);
     proximoEvento(cola, c);
-    return entrada;
+    tiempoEntrada;
 }
 
 void Oficina::proximoEvento(int cola, Cliente *c) {
@@ -59,14 +58,14 @@ void Oficina::calcularEstadisticas() {
 
 void Oficina::simulacion() {
     while (transcurso < datos->tiempoMaximo) {
-        float tiempo = poisson() + transcurso;
+        float tiempo = poisson();
         float cliente = eventos->frente();
-        if (cliente < tiempo) {
+        if (cliente < tiempo + transcurso) {
             Evento *e = eventos->eliminar();
             colas[e->getTransicion()]->agregar(e->getC());
             e->getC()->sumarTiempo(datos->atenciones[e->getTransicion()]);
         } else {
-            generarEntrada();
+            generarEntrada(tiempo);
         }
     }
 }
